@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Chatbot</title>
-    <!-- Correct static file path using Flask's url_for -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
@@ -13,9 +13,7 @@
     <h1>💬 Your AI Support Chat</h1>
     <nav>
         <a href="index.html">🏠 Home</a>
-        <a href="journal.html">📖 Journal</a>
-        <a href="mood.html">😊 Mood Tracker</a>
-        <a href="exercises.html">🧘 Exercises</a>
+
     </nav>
 </header>
 
@@ -26,13 +24,13 @@
             <p>Type your message below and get support! 💙</p>
         </div>
         <div class="chat-box" id="chat-box"></div>
-        <div class="chat-input">
+        <div class="chyypat-input">
             <input type="text" id="user-input" placeholder="Type a message..." />
             <button onclick="sendMessage()">➤</button>
         </div>
     </div>
 </main>
 
-<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>
